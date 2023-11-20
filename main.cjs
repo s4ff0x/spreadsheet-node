@@ -76,6 +76,7 @@ function getInsertCell(sheet) {
 
 function checkDate(sheet) {
   const { formattedValue: nextDateString } = sheet.getCell(...NEXT_DATE_CELL);
+  // TODO: compare 2 dates
   const nextDate = new Date(nextDateString);
   const currentDate = new Date();
   return true;
